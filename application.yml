@@ -1,4 +1,4 @@
-  eureka:
+eureka:
     client:
       enabled: true
       fetch-registry: true
@@ -6,13 +6,13 @@
         defaultZone:http://localhost:8761/eureka/
     instance:
       hostname: localhost
-      
+
 microservice:
-  payment-service:
-    end-points:
-      endpoint:
-        uri: http://PAYMENT-SERVICE/payment/doPayment
-  order-service:
-    end-points:
-      endpoint:
-        uri: http://ORDER-SERVICE/order/bookOrder
+    payment-service:
+      end-points:
+        endpoint:
+          uri: http://PAYMENT-SERVICE/payment/doPayment
+    order-service:
+      end-points:
+        endpoint:
+          uri: http://ORDER-SERVICE/order/bookOrder
